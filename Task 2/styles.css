@@ -1,0 +1,103 @@
+body {
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+    text-decoration: underline;
+}
+
+.relative {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0,0);
+    border: 3px solid #73AD21; 
+}
+.head{
+    display:inline;
+    margin-top: 20%;
+    font-family: cursive;
+    font-size: 30;
+}
+.bloc{
+    display:none;
+    position:absolute;
+    background-color: blanchedalmond;
+    font-family: cursive;
+    color: red;
+    font-size: 12;
+    padding: 3px;
+    border: solid 2px black;
+
+}
+.head:hover + .bloc{
+    display: block;
+    transform: translateX(-180px);
+}
+
+
+.des{
+    font-family: cursive;
+    font-size: 20;
+}
+.cont{
+    font-family: cursive;
+    font-size: 15;
+    text-align: left;
+}
+.whats{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 50;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url("WhatsApp.png");
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease-in-out;
+}
+.qr{
+    position: fixed;
+    bottom: 20px;
+    left: 150px;
+    height: 60px;
+    width: 60px;
+    background-image: url("qr.png");
+    background-position: center;
+    background-size: contain;
+    transition: transform 1s ease-in-out;
+}
+.whats:hover{
+    transform: scale(2);
+}
+
+.qr:hover{
+    transform: scale(2.9);
+}
+.qr:hover + .whats{
+    transform:scale(0.3);
+}
