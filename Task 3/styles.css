@@ -168,7 +168,7 @@ a:active {
         margin-top: 95vh;
         flex-direction: column;
         width: 90vw;
-        transform: translateX(100%);
+        transform: translateX(300%);
         transition: transform 0.5s ease-in-out;
     }
     #list a{
