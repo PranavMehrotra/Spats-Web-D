@@ -15,7 +15,7 @@ function lists(){
 }
 else {
     l=0;
-    document.getElementById("list").style.transform="translateX(100%)";
+    document.getElementById("list").style.transform="translateX(300%)";
     document.getElementById("line1").style.transform="rotate(0deg) translate(0,0)";
     document.getElementById("line2").style.opacity="1";
     document.getElementById("line3").style.transform="rotate(0deg) translate(0,0)";
