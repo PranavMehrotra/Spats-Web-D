@@ -188,7 +188,7 @@ a:link, a:visited, a:hover, a:active {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-image: url("/Task 2/WhatsApp.png");
+    background-image: url("Task 2/WhatsApp.png");
     background-position: center;
     background-size: contain;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -200,7 +200,7 @@ a:link, a:visited, a:hover, a:active {
     left: 180px;
     height: 60px;
     width: 60px;
-    background-image: url("/Task 2/qr.png");
+    background-image: url("Task 2/qr.png");
     background-position: center;
     background-size: contain;
     transition: transform 1s ease-in-out;
