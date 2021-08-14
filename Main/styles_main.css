@@ -1,0 +1,36 @@
+body{
+    overflow: hidden;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.head, .head2{
+    height: 48vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.head{
+    margin-top: 30px;
+}
+.head a, .head2 a{
+    height: 90%;
+    width: 23%;
+    display: flex;
+    background: khaki;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 2vw;
+    border-radius: 20px;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+
+.head a:hover, .head2 a:hover{
+    font-size: 2.3vw;
+    background: chocolate;
+
+}
