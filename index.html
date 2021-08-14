@@ -1,17 +1,84 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>
-            Web D Tasks
-        </title>
-    </head>
-
-    <body>
-        <ol style="padding: 15px; margin: 30px;">
-    
-    <li> <a href="Task 2/Task 2.html"> Task 2</a></li>
-    <li> <a href="Task 3/Task 3.html"> Task 3</a></li>
-    </ol>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav's Spats Page</title>
+    <link rel="stylesheet" href="Main/styles.css">
+    <script src="Main/script.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <a href="https://spats.in" target="_blank"><img src="/Main/logo.png" alt="Spats" id="logo">
+        </a>
+            <ul id="list">
+            <li><a href="#">Home</a></li>
+            <li><div id="dpdown"><a href="#">Projects 
+                <span>></span></a>
+                <div id="div_down">
+                    <ul>
+                        <li><a href="Task 2/Task 2.html">Task 2</a></li>
+                        <li><a href="Task 3/Task 3.html">Task 3</a></li>
+                    </ul>
+                </div>
+            </div></li>
+            <li><a href="Main/Members.html" target="_blank">Members</a></li>
+            <li><a href="https://www.facebook.com/spAts.iitkgp" target="_blank">About us</a></li>
+            <li><a href="#query">Have a Query?</a></li>
+        </ul>
+        <div id="burger" onclick="lists()">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+        </div>
+    </nav>
+    <div class="relative" id="card">
+        <a href="https://en.wikipedia.org/wiki/IIT_Kharagpur" title="Learn more about IIT Kharagpur" target="_blank"><img src="Main/KGP_Logo.png" style="width: 200px;height: 20%;" >
+        </a>
+        <a><img src="Main/Pranav.jpg" onmouseover="Pic_on(0)" class="sun">
+        </a>
+            <p class="heads">
+            <a onmouseover="Pic_on(1)" style="cursor: pointer;">Pranav Mehrotra</a>
+            <div class="bloc" id="Pranav">Hello, I am Pranav Mehrotra, second year undergraduate student of Computer Science and Engineering department of IIT Kharagpur.
+                I am a member of <a href="https://spats.in" target="_blank"><u>Spats</u></a>. <br><br>This website contains my Wed Development work in Spats.
+                <br>Thanks for visiting my website, feel free to drop suggestions in the query box(at the bottom of the page).
+                <p id="close" onclick="Pic_off()">X</p></div>
+            <p class="des">
+                FQTQ member of Spats
+            </p>
+            </p>
+            <p>
+                <p class="cont"><u>Contact us:</u></p>
+                <p class="qr"></p>
+                <a href="https://api.whatsapp.com/send?phone=919670070737&text=Hello_Pranav" class="whats" target="_blank"></a>
+            </p>
+    </div>
+    <div id="query">Have a Query?
+        <p><i>(Please fill the form below)</i></p>
+    </div>
+    <div id="form">    
+    <form>
+        <fieldset>
+            <legend>Submit your queries:</legend>
+            <label for="name">Full Name: </label>
+            <input type="text" name="name" id="name" placeholder="Full Name" required><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" required style="width: 220px;"><br>
+            <label for="contact">Contact Number: </label>
+            <input type="number" name="contact" id="contact" placeholder="10 digit number" min="1000000000" max="9999999999" required autocomplete="off" style="width: 120px;">
+            <br>
+            <label for="text" id="text_des">Description: </label><br>
+            <textarea name="text" id="text" placeholder="Describe your query here!" rows="10" cols="100" required></textarea>
+            <br><br><br>
+            <input type="checkbox" name="confirm" id="confirm" value="Confirmed" required>
+            <label for="confirm">I confirm that all the information provided is true and correct upto the best of my knowledge.</label>
+            <br><br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            <br>
+        </fieldset>
+    </form>
+    </div>
+</body>
 </html>
